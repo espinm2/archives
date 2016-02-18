@@ -96,11 +96,6 @@
 
                     </li>
 
-                    <li>
-        
-                        <a href="contact.html">Contact</a>
-
-                    </li>
 
                 </ul>
 
@@ -128,9 +123,9 @@
 
             <div class="col-lg-12">
 
-                <h1 class="page-header">Online Contraption
+                <h1 class="page-header">OASIS
 
-                    <small>WebGL interface</small>
+                    <small>An Online Architectural Sketching Interface for Simulation</small>
 
                 </h1>
 
@@ -149,8 +144,14 @@
 
 
             <div class="col-md-8">
+                <center>
 
-                <img class="img-responsive" src="images/large_online_contr.png" alt="">
+                <img class="img-responsive" src="images/animation.gif" alt="">
+                <br>
+                <button type="button" class="btn btn-primary btn-lg" onclick="window.location='https://oasis.cs.rpi.edu'">Try Application</button>
+
+                <button type="button" class="btn btn-secondary btn-lg" onclick="window.location='https://oasis.cs.rpi.edu/#about'">More Information</button>
+                </center>
 
             </div>
 
@@ -158,24 +159,44 @@
 
             <div class="col-md-4">
 
-                <h3>Project Description</h3>
+                <h3>What is OASIS?</h3>
                 <p class="text-justify">
-                 <a href ="http://www.cs.rpi.edu/graphics/publications/nasman_autocon_2013.pdf">Previous research </a> and user evaluation concluded that having a tangible user interface for the design of room layouts with 
-                 daylighting simulations helped user gain insight into how to better provide natural lighting for spaces with to create energy efficient        buildings. 
-                 In the design process most 3D modeling software requires a complete model to run lighting simulations on, however our tool is quick and easy much earlier in the design phase. This allows for the consideration of lighting much sooner
-                 and in response architects can better plan their rooms to maximize the use of natural lighting in spaces
+                Daylighting plays a significant role in architecture; its creative and efficient use offers aesthetics visuals, increased productivity, and reduced energy demand. However, poor implementation of daylighting systems can have adverse impacts such as visual discomfort, solar heat gain, and an absence of energy savings. <br><br>
+
+                OASIS is a novel interface that is easily accessible to non-experts providing them with the ability to generate 3D models for daylighting simulation from 2D architectural sketches. This online interface allows users to both quickly create 3D models and analyze daylighting simulation results. I propose that this interface will aid both experts and non-experts during the schematic design phase where ease of expressing 3D geometries and speed of analyzing simulation results is most significant. 
+ 
+                <!--
+                <a href ="http://www.cs.rpi.edu/graphics/publications/nasman_autocon_2013.pdf">Previous research </a> and user evaluation concluded that having a tangible user interface for the design of room layouts with 
+                daylighting simulations helped user gain insight into how to better provide natural lighting for spaces with to create energy efficient        buildings. 
+                In the design process most 3D modeling software requires a complete model to run lighting simulations on, however our tool is quick and easy much earlier in the design phase. This allows for the consideration of lighting much sooner
+                and in response architects can better plan their rooms to maximize the use of natural lighting in spaces
                 For research this past summer I offer a web-based interface that allows for lighting visualization while building a models. The following      website is prototype that I use to gather        
                 information on how long it takes users to create, render, and renovates models.
                 </p>
+                -->
 
-                <h3>Project Details</h3>
+                <h3>Technology behind OASIS</h3>
                 <ul>
-                  <li> Uses WebGL and three.js library to render 3D visualization on web browsers</li>
-                  <li> Uses same key algorithms from the tangible user interface </li>
-                  <li> Uses photon mapping to get global illumination to generate lighting textures </li>
-                  <li> Created a server client model to render user interace locally, but simulations through a server </li>
-                  <li> Saves statistical significant information for each model created in PostgreSQL database</li>
+                <li>Photon mapping to simulate global illumination</li>
+                <li>WebGL to display interactive 3D models and simulation results</li>
+                <li>Optimization algorithm to interpret sketches and generate 3D models </li>
+                <li>Nvidia Optix to run our daylighting simulations at interactive rates on the GPU</li>
+                <li>
+                Previous research technologies used in 
+                <a href ="http://www.cs.rpi.edu/graphics/publications/nasman_autocon_2013.pdf">
+                the Virtual Heliodon</li>
+                </a>
                 </ul>
+                </ul>
+
+                <h3>My Contributions to OASIS</h3>
+                <ul>
+                <li>Lead initial researcher and developer of OASIS</li>
+                <li>Implemented an easy-to-use sketching architectural interface</li>
+                <li>Management of computational heavy lighting algorithms via a client-server approach</li>
+                <li>Conduction a large scale prototype user study on OASIS</li>
+                </ul>
+
 
             </div>
 
@@ -199,7 +220,7 @@
 
             <div class="col-sm-3 col-xs-6">
 
-                <a href="https://irene.cs.rpi.edu:443/">
+                <a href="https://oasis.cs.rpi.edu">
 
                     <img class="img-responsive portfolio-item" src="images/website_icon.png" alt="">
 
@@ -237,7 +258,7 @@
 
                 <div class="col-lg-12">
 
-                    <p>Copyright &copy; Max Espinoza 2014</p>
+                    <p>Copyright &copy; Max Espinoza 2016</p>
 
                 </div>
 
